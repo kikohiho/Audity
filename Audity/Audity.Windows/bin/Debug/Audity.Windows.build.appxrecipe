@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-KPL8VKP</Machine>
+    <WindowsUser>kikohiho</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>a3572f60-d289-4418-aa76-91d71741bb71</PackageIdentityName>
+    <PackageIdentityPublisher>CN=kikohiho</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity.Windows\obj\Debug\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity.Windows\bin\Debug\Audity.Windows.exe">
+      <PackagePath>Audity.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\bin\Debug\Audity.dll">
+      <PackagePath>Audity.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Core.dll">
+      <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Platform.dll">
+      <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Platform.WinRT.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet.dll">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Xaml.dll">
+      <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\bin\Debug\Microsoft.WindowsAzure.Mobile.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\bin\Debug\Newtonsoft.Json.dll">
+      <PackagePath>Newtonsoft.Json.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\bin\Debug\System.Net.Http.Primitives.dll">
+      <PackagePath>System.Net.Http.Primitives.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity.Windows\bin\Debug\Audity.Windows.xr.xml">
+      <PackagePath>Audity.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Platform.WinRT\PageControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\PageControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Platform.WinRT\StepperControl.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\StepperControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT\Xamarin.Forms.Platform.WinRT.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\FormsTextBoxStyle.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Resources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\TabletResources.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\packages\Xamarin.Forms.2.3.3.180\lib\win81\Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml">
+      <PackagePath>Xamarin.Forms.Platform.WinRT.Tablet\Xamarin.Forms.Platform.WinRT.Tablet.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
