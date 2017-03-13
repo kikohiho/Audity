@@ -24,7 +24,7 @@ C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\bin
 C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\obj\Debug\Audity.csproj.App.config
 C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\obj\Debug\Audity.Views.ReceiptsLogPage.xaml.g.cs
-C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\obj\Debug\Audity.dll.mdb
-C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\bin\Debug\Audity.dll.mdb
-C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\obj\Debug\Audity.dll.mdb
-C:\Users\kikohiho\Documents\Visual Studio 2015\Projects\Audity\Audity\Audity\bin\Debug\Audity.dll.mdb
+C:\Users\kikohiho\documents\visual studio 2015\Projects\Audity\Audity\Audity\obj\Debug\Audity.dll.mdb
+C:\Users\kikohiho\documents\visual studio 2015\Projects\Audity\Audity\Audity\bin\Debug\Audity.dll.mdb
+C:\Users\kikohiho\documents\visual studio 2015\Projects\Audity\Audity\Audity\obj\Debug\Audity.dll.mdb
+C:\Users\kikohiho\documents\visual studio 2015\Projects\Audity\Audity\Audity\bin\Debug\Audity.dll.mdb

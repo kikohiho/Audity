@@ -1,7 +1,7 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
     <LocalAssembly PathName="c:\users\kikohiho\documents\visual studio 2015\projects\audity\audity\audity.windows\obj\debug\intermediatexaml\audity.windows.exe" HashGuid="2736e8f2-1293-eb3f-3a96-624a86d8da56" />
-    <ReferenceAssembly PathName="c:\users\kikohiho\documents\visual studio 2015\projects\audity\audity\audity\bin\debug\audity.dll" HashGuid="d0b2a272-542a-f206-cf7c-ab680e95fc24" />
+    <ReferenceAssembly PathName="c:\users\kikohiho\documents\visual studio 2015\projects\audity\audity\audity\bin\debug\audity.dll" HashGuid="ce16b214-3077-9243-b31d-061ad7c2b15a" />
     <ReferenceAssembly PathName="c:\users\kikohiho\documents\visual studio 2015\projects\audity\packages\xamarin.forms.2.3.3.180\lib\win81\xamarin.forms.core.dll" HashGuid="c782f70f-077f-7e2d-5bd4-f6b5da067f8a" />
     <ReferenceAssembly PathName="c:\users\kikohiho\documents\visual studio 2015\projects\audity\packages\xamarin.forms.2.3.3.180\lib\win81\xamarin.forms.platform.dll" HashGuid="6b938cd4-44c0-2618-7eb6-4caa3f482076" />
     <ReferenceAssembly PathName="c:\users\kikohiho\documents\visual studio 2015\projects\audity\packages\xamarin.forms.2.3.3.180\lib\win81\xamarin.forms.platform.winrt.dll" HashGuid="fe4acc44-27ba-0e4e-a08b-26ae7dccb678" />

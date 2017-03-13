@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.WindowsAzure.MobileServices;
+using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
 
 using Foundation;
 using UIKit;
@@ -25,7 +27,8 @@ namespace Audity.iOS
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
-            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+            CurrentPlatform.Init();
+            
 
             return base.FinishedLaunching(app, options);
         }

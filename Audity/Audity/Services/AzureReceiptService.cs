@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Audity.Interfaces;
 using Audity.Models;
 using Microsoft.WindowsAzure.MobileServices;
+using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
+using Microsoft.WindowsAzure.MobileServices.Sync;
+using Plugin.Connectivity;
 
 namespace Audity.Services
 {
@@ -14,29 +17,65 @@ namespace Audity.Services
 
         private MobileServiceClient client;
         private string azureendpoint = "http://mobileappsprueba.azurewebsites.net/";
-        IMobileServiceTable<Receipt> reiciptsTable;
+        IMobileServiceSyncTable<Receipt> reiciptsTable;
 
-        private void Initialize()
+        private async Task Initialize()
         {
             if (client != null)
                 return;
-
+            var store = new MobileServiceSQLiteStore("localstore.db");
+            store.DefineTable<Receipt>();
 
             client = new MobileServiceClient(azureendpoint);
-            reiciptsTable = client.GetTable<Receipt>();
+            await client.SyncContext.InitializeAsync(store, new MobileServiceSyncHandler());
+
+            reiciptsTable = client.GetSyncTable<Receipt>();
+
+            if (CrossConnectivity.Current.IsConnected)
+            {
+                try
+                {
+                    await client.SyncContext.PushAsync();
+                    await reiciptsTable.PullAsync(
+                        "allReceipts", reiciptsTable.CreateQuery());
+                }
+                catch (Exception ex)
+                {
+                    System.Diagnostics.Debug.WriteLine("Got exception: {0}", ex.Message);
+                }
+            }
+            
+
+            //Ejemplo de como hacer otro query para un grupo de una tabla especifica
+            //try
+            //{
+
+            //    await responseTable.PullAsync("syncResponses" + questionId,
+            //                                      responseTable.Where(
+            //                                      r => r.SurveyQuestionId == questionId));
+
+            //}
+            //catch (Exception ex)
+            //{
+            //    // TODO: handle error
+            //    Debug.WriteLine("Got exception: {0}", ex.Message);
+            //}
+
+
+
 
         }
 
-        public Task<IEnumerable<Receipt>> GetReceiptsAsync()
+        public async Task<IEnumerable<Receipt>> GetReceiptsAsync()
         {
-            Initialize();
-            return reiciptsTable.ReadAsync();
+            await Initialize();
+            return await reiciptsTable.ReadAsync();
             
         }
 
         public async Task<IEnumerable<Receipt>> GetReiciptAsync(string reiciptId)
         {
-            Initialize();
+            await Initialize();
             return await reiciptsTable
             .Where(r => r.titulo == reiciptId)
             .OrderByDescending(r => r.UpdatedAt)
@@ -44,14 +83,14 @@ namespace Audity.Services
             
         }
 
-        public Task AddOrUpdateReceiptAsync(Receipt response)
+        public async Task AddOrUpdateReceiptAsync(Receipt response)
         {
-            Initialize();
+            await Initialize();
             if (string.IsNullOrEmpty(response.Id))
             {
-                return reiciptsTable.InsertAsync(response);
+                await reiciptsTable.InsertAsync(response);
             }
-            return reiciptsTable.UpdateAsync(response);
+            await reiciptsTable.UpdateAsync(response);
 
         }
 
