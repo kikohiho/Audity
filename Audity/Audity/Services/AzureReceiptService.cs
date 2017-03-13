@@ -9,6 +9,7 @@ using Microsoft.WindowsAzure.MobileServices;
 using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
 using Microsoft.WindowsAzure.MobileServices.Sync;
 using Plugin.Connectivity;
+using Newtonsoft.Json.Linq;
 
 namespace Audity.Services
 {
@@ -39,6 +40,16 @@ namespace Audity.Services
                     await reiciptsTable.PullAsync(
                         "allReceipts", reiciptsTable.CreateQuery());
                 }
+                catch (MobileServicePushFailedException ex)
+                {
+                    if (ex.PushResult != null)
+                    {
+                        foreach (var result in ex.PushResult.Errors)
+                        {
+                            await ResolveError(result);
+                        }
+                    }
+                }
                 catch (Exception ex)
                 {
                     System.Diagnostics.Debug.WriteLine("Got exception: {0}", ex.Message);
@@ -63,6 +74,29 @@ namespace Audity.Services
 
 
 
+
+        }
+
+        private async Task ResolveError(MobileServiceTableOperationError result)
+        {
+            // Ignore if we can't see both sides.
+            if (result.Result == null || result.Item == null)
+                return;
+
+            var serverItem = result.Result.ToObject<Receipt>();
+            var localItem = result.Item.ToObject<Receipt>();
+
+            if (serverItem.titulo == localItem.titulo)
+            {
+                // Items are the same, so ignore the conflict
+                await result.CancelAndDiscardItemAsync();
+            }
+            else
+            {
+                // Always take the client
+                localItem.version = serverItem.version;
+                await result.UpdateOperationAsync(JObject.FromObject(localItem));
+            }
 
         }
 

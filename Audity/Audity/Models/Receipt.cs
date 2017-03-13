@@ -21,5 +21,8 @@ namespace Audity.Models
 
         
         public string Id { get; set; }
+
+        [Version]
+        public string version { get; set; }
     }
 }
